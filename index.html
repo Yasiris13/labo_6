@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interactiva - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Calculadora Interactiva</h1>
+            <p>Una herramienta web moderna para realizar operaciones matemáticas</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Bienvenido a la Calculadora Web</h2>
+            <p>Selecciona una de las siguientes operaciones para comenzar:</p>
+        </section>
+
+        <section class="operations-grid">
+            <div class="operation-card" data-operation="suma">
+                <div class="card-icon">+</div>
+                <h3>Suma</h3>
+                <p>Suma dos números</p>
+            </div>
+            
+            <div class="operation-card" data-operation="resta">
+                <div class="card-icon">-</div>
+                <h3>Resta</h3>
+                <p>Resta dos números</p>
+            </div>
+            
+            <div class="operation-card" data-operation="multiplicacion">
+                <div class="card-icon">×</div>
+                <h3>Multiplicación</h3>
+                <p>Multiplica dos números</p>
+            </div>
+            
+            <div class="operation-card" data-operation="division">
+                <div class="card-icon">÷</div>
+                <h3>División</h3>
+                <p>Divide dos números</p>
+            </div>
+            
+            <div class="operation-card" data-operation="potencia">
+                <div class="card-icon">x<sup>y</sup></div>
+                <h3>Potencia</h3>
+                <p>Eleva un número a una potencia</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para cálculos -->
+    <div id="calculator-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Operación</h2>
+            <div class="calculator-form">
+                <div class="input-group">
+                    <label for="num1">Primer número:</label>
+                    <input type="number" id="num1" placeholder="Ingresa un número">
+                </div>
+                <div class="input-group">
+                    <label for="num2">Segundo número:</label>
+                    <input type="number" id="num2" placeholder="Ingresa un número">
+                </div>
+                <button id="calculate-btn" class="calculate-btn">Calcular</button>
+                <div class="result" id="modal-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Calculadora Web Interactiva &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
